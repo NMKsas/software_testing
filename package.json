@@ -1,0 +1,17 @@
+{
+  "name": "testing_project",
+  "version": "1.0.0",
+  "description": "COMP.SE.200 Software testing group work",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm install && jest --verbose --coverage --collectCoverageFrom='source/**/*.{js}'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
