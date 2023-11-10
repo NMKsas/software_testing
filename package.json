@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm install && jest --verbose --coverage --collectCoverageFrom='source/**/*.{js}'"
+    "test": "jest --verbose --coverage --collectCoverageFrom='source/**/*.{js}'"
   },
   "author": "",
   "license": "ISC",
