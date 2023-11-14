@@ -6,6 +6,6 @@
  * Tests the toString function.
  */
 
-const toString = require('../src/toString');
+import toString from '../src/toString';
 
 // placeholder for tests

@@ -6,6 +6,6 @@
  * Tests the defaultTo function.
  */
 
-const defaultTo = require('../src/defaultTo');
+import defaultTo from '../src/defaultTo';
 
 // placeholder for tests

@@ -6,6 +6,6 @@
  * Tests the filter function.
  */
 
-const filter = require('../src/filter');
+import filter from '../src/filter';
 
 // placeholder for tests

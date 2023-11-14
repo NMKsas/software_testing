@@ -6,6 +6,6 @@
  * Tests the toNumber function.
  */
 
-const toNumber = require('../src/toNumber');
+import toNumber from '../src/toNumber';
 
 // placeholder for tests

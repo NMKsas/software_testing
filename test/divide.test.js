@@ -6,6 +6,11 @@
  * Tests the divide function.
  */
 
-const divide = require('../src/divide');
+import divide from '../src/divide';
 
 // placeholder for tests
+
+/*
+* divide(6, 4)
+* // => 1.5
+*/

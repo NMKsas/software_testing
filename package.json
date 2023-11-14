@@ -13,5 +13,17 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^29.7.0"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/{!(.internal/*)}"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "babel-jest": "^29.7.0"
   }
 }

@@ -6,6 +6,6 @@
  * Tests the ceil function.
  */
 
-const ceil = require('../src/ceil');
+import ceil from '../src/ceil';
 
 // placeholder for tests

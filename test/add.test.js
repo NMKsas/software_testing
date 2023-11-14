@@ -6,6 +6,17 @@
  * Tests the add function.
  */
 
-const add = require('../src/add');
+import add from '../src/add';
 
 // placeholder for tests
+
+/*
+ * add(6, 4)
+ * // => 10
+ */
+
+describe("add", () => {
+  test("6 + 4 should equal 10", () => {
+    expect(add(6, 4)).toBe(10);
+  })
+})
