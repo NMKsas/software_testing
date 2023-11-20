@@ -8,17 +8,19 @@
 
 import get from '../src/get';
 
-// placeholder for tests
+const object = { 'a': [{ 'b': { 'c': 3 } }] }
 
-/*
-* const object = { 'a': [{ 'b': { 'c': 3 } }] }
-*
-* get(object, 'a[0].b.c')
-* // => 3
-*
-* get(object, ['a', '0', 'b', 'c'])
-* // => 3
-*
-* get(object, 'a.b.c', 'default')
-* // => 'default'
-*/
+describe("get", () => {
+  test("accessing value by index and key", () => {
+    expect(get(object, 'a[0].b.c')).toBe(3);
+  })
+  test("path to value can be given as an array", () => {
+    expect(get(object, ['a', '0', 'b', 'c'])).toBe(3);
+  })
+  test("default value is returned requested value does not exist", () => {
+    expect(get(object, 'a.b.c', 'default')).toBe('default');
+  })
+  test("return undefined when requested value does not exist and default value is not specified", () => {
+    expect(get(object, 'a.b.c')).toBe(undefined);
+  })
+})
