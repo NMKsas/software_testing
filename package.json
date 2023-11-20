@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --verbose --coverage --collectCoverageFrom='source/**/*.{js}'"
+    "test": "jest --verbose --coverage --collectCoverageFrom='source/**/*.{js}' && coveralls < coverage/lcov.info"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
-    "babel-jest": "^29.7.0"
+    "babel-jest": "^29.7.0",
+    "coveralls": "^3.1.1"
   }
 }
