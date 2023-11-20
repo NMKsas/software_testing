@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --verbose --coverage --collectCoverageFrom='source/**/*.{js}' && coveralls < coverage/lcov.info"
+    "test":  "jest --verbose --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
   "license": "ISC",
@@ -16,8 +16,13 @@
   },
   "jest": {
     "verbose": true,
+    "collectCoverage": true, 
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
     "collectCoverageFrom": [
-      "src/**/*.js",
+      "src/*.js",
       "src/{!(.internal/*)}"
     ]
   },
