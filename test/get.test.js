@@ -23,4 +23,7 @@ describe("get", () => {
   test("return undefined when requested value does not exist and default value is not specified", () => {
     expect(get(object, 'a.b.c')).toBe(undefined);
   })
+  test("return undefined when object is null", () => {
+    expect(get(null, 'a')).toBe(undefined);
+  })
 })
