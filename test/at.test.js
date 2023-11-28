@@ -23,4 +23,7 @@ describe("at", () => {
   test("returned array can contain undefined and defined values", () => {
     expect(at(object, ['d', 'a[0].b.c', 'a[1]'])).toStrictEqual([undefined, 3, 4]);
   })
+  test("return undefined when object is undefined", () => {
+    expect(at(undefined, ['a'])).toStrictEqual([undefined]);
+  })
 })
