@@ -22,10 +22,10 @@ describe("every", () => {
     expect(every([-3, 2.55, "1"], Number)).toBe(false);
   })
   test("test string values when all are strings", () => {
-    expect(every(["hello", "1", "true", "abc"], Number)).toBe(true);
+    expect(every(["hello", "1", "true", "abc"], String)).toBe(true);
   })
   test("test string values when not all are strings", () => {
-    expect(every([123, "1", false, "abc"], Number)).toBe(false);
+    expect(every([123, "1", false, "abc"], String)).toBe(false);
   })
   test("return true for empty array", () => {
     expect(every([], Boolean)).toBe(true);
