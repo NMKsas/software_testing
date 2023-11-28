@@ -19,7 +19,7 @@ import ceil from '../src/ceil';
 *
 * ceil(4.006)
 * // => 5
-*
+*s
 * ceil(6.004, 2)
 * // => 6.01
 *
@@ -43,9 +43,9 @@ describe("ceil", () => {
   })
 
   it("ceils the corresponding number or decimal (left to right), when precision is negative integer", () => {
-    const floatNum2 = 3.00023;
-    const ceiled2 = 3.1;
-    const precision2 = 2; 
+    const floatNum2 = 3023;
+    const ceiled2 = 3100;
+    const precision2 = -2; 
     expect(ceil(floatNum2,precision2)).toBe(ceiled2);
   })
 

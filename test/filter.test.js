@@ -43,9 +43,10 @@ describe("filter", () => {
   test("should return a filtered Array", () => {
 
     // numeric array
+    const numArray = [1, 2, 3, 4, 5];
     const predicate4 = (value) => value > 3;
     const resultArray1 = filter(numArray, predicate4);
-    expect(resultArray1).toEqual([6, 5]);
+    expect(resultArray1).toEqual([4, 5]);
 
     // object array 
     const inputArr2 = [{firstItem : 1}, {secondItem : 2}, {thirdItem : 3}];
