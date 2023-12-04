@@ -11,6 +11,12 @@ import get from '../src/get';
 const object = { 'a': [{ 'b': { 'c': 3 } }] }
 
 describe("get", () => {
+  test("accessing root value with string path", () => {
+    expect(get(object,'a')).toStrictEqual([{ 'b': { 'c': 3 } }]); 
+  })
+  test("accessing root value with array path", () => {
+    expect(get(object,['a'])).toStrictEqual([{ 'b': { 'c': 3 } }]); 
+  })
   test("accessing value by index and key", () => {
     expect(get(object, 'a[0].b.c')).toBe(3);
   })
