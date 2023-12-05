@@ -22,7 +22,11 @@ describe("add", () => {
     expect(add(-2, 8)).toBe(6);
   })
 
-
+  /*   
+    These test cases are depend on the implementation. While JavaScript automatically 
+    Concatenates > MAX_VALUE to MAX_VALUE itself, the implementation could follow alternative
+    path, such as defining overflow value as Infinity 
+  */
   test("should result in Infinity, when positive number is added to Number.MAX_VALUE", () => {
     expect(add(Number.MAX_VALUE,100)).toBe(Infinity);
   });
