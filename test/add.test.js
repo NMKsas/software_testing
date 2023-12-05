@@ -48,5 +48,12 @@ describe("add", () => {
     expect(add(-Infinity,-100000)).toBe(-Infinity);
   });
 
+  test("should result in NaN when trying to add NaN to a number", () => {
+    expect(add(1, NaN)).toBe(NaN);
+  });
+  test("should result in NaN when trying to add NaN to NaN", () => {
+    expect(add(NaN, NaN)).toBe(NaN);
+  });
+
 }); 
 
