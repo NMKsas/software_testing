@@ -40,7 +40,7 @@ describe("every", () => {
     expect(every([{a: 1}, {b: {c: 3}}, {d: [1, 2, 3]}], Object)).toBe(true);
   })
   test("test object values when not all are objects", () => {
-    expect(every([{a: 1}, {b: {c: 3}}, undefined, {d: [1, 2, 3]}, null], Object)).toBe(true);
+    expect(every([{a: 1}, {b: {c: 3}}, undefined, {d: [1, 2, 3]}, null], Object)).toBe(false);
   })
   test("return true for empty array", () => {
     expect(every([], Boolean)).toBe(true);
