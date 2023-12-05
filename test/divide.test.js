@@ -25,6 +25,12 @@ describe("divide", () => {
   test("dividing integers when result is not an integer", () => {
     expect(divide(10, 3)).toBeCloseTo(10/3, 3);
   })
+
+  /* 
+    The result of the following test cases depend on the implementation. While 
+    Javascript resolves zero division with infinity, mathematically it could be
+    desired to get NaN as a result. 
+  */
   test("dividing positive number by zero returns infinity", () => {
     expect(divide(1, 0)).toBe(Infinity);
   })
