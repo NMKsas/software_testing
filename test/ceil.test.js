@@ -50,19 +50,27 @@ describe("ceil", () => {
   })
 
   it("works correctly with integers", () => {
-    expect(ceil(8, 2)).toBe(8);
+    const num = 8;
+    const precision = 2;
+    expect(ceil(num, precision)).toBe(8);
   })
 
   it("doesn't modify a decimal number that's already at the specified precision", () => {
-    expect(ceil(6.01, 2)).toBe(6.01);
+    const num = 6.01;
+    const precision = 2;
+    expect(ceil(num, precision)).toBe(6.01);
   })
 
   it("works correctly with negative number and positive precision", () => {
-    expect(ceil(-6.004, 2)).toBe(-6);
+    const num = -6.004;
+    const precision = 2;
+    expect(ceil(num, precision)).toBe(-6);
   })
 
   it("works correctly with negative number and negative precision", () => {
-    expect(ceil(-6040, -2)).toBe(-6000);
+    const num = -6040;
+    const precision = -2;
+    expect(ceil(num, precision)).toBe(-6000);
   })
 
 
