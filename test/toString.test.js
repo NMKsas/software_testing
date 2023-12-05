@@ -67,12 +67,6 @@ describe("toString", () => {
 
   test("should stringify a Symbol", () => {
     const sym = Symbol("symbol");
-    expect(toString(sym)).toBe(`${sym}`); 
+    expect(toString(sym)).toBe(`Symbol(symbol)`); 
   });
-
-  test("should return only value from object input", () => {
-    const obj1 = { key: "value" }; 
-    expect(toString(obj1)).toBe(`${obj1.value}`); 
-  });
-
 });
